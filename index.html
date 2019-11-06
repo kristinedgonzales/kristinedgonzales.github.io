@@ -20,7 +20,23 @@
 		    collapseRefineTools:false,
 		    searchLocation:'index.html',
 		    disabledTypes:['accom','carhire','events','packages'],
-			enableRegionSearch:true
+			enableRegionSearch:true,
+			adults: 2,
+			children: 0,
+			defaultRegionRegion: "Blue Mountains",
+			defaultRegionState: "NSW",
+			defaultSort: "instant",
+			disabledTypes:  {"accom", "carhire", "events", "packages"},
+			enableRegionSearch: true,
+			ignoreSearchCookie: true,
+			infants: 0,
+			minDaysFromToday: 2,
+			period: 2,
+			searchLocation: "tours",
+			showAllTours: true,
+			showMap: false,
+			toursOnlyMode: true,
+			vcID: 278,
 	    });
         BE.gadget.region('#regionGadget',{
             vcID:278,
@@ -30,7 +46,25 @@
 			showRefineTools: true,
 	        embedSearch: false,
 	        toursOnlyMode:true,
-			enableRegionSearch:true
+			enableRegionSearch:true,collapseRefineTools: false,
+			defaultRegionRegion: "Blue Mountains",
+			defaultRegionState: "NSW",
+			defaultSort: "instant",
+			disabledTypes: {"accom", "carhire", "events", "packages"}
+			embedSearch: false,
+			enableRegionSearch: true,
+			googleMapsKey: "AIzaSyAVvqk5EvrDADbmlE81KqyrbK_OChUrGEg",
+			ignoreSearchCookie: true,
+			itemDetailPageURL: "detail/{type}/{id}/{url}",
+			searchLocation: "tours",
+			showAllAccom: false,
+			showAllEvents: false,
+			showAllTours: true,
+			showDetailsInline: true,
+			showMap: false,
+			showRefineTools: true,
+			toursOnlyMode: true,
+			vcID: 278,
         });
     });
 </script>
