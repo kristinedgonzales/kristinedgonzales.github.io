@@ -36,7 +36,7 @@
 	    BE.gadget.search('#searchGadget',{
 		    searchGadgetSettings
 	    });
-		console.log('SEARCH: ' + searchGadgetSettings);
+		console.log('SEARCH: ' + JSON.stringify(searchGadgetSettings));
 		
 		var regionGadgetSettings = {
 			vcID:278,
@@ -60,7 +60,7 @@
         BE.gadget.region('#regionGadget',{
             regionGadgetSettings
         });
-		console.log('REGION: ' + regionGadgetSettings);
+		console.log('REGION: ' + JSON.stringify(regionGadgetSettings));
     });
 </script>
 </body>
