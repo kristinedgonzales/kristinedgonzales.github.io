@@ -33,9 +33,9 @@
 			showMap: false,
 			toursOnlyMode: true,
 		};
-	    BE.gadget.search('#searchGadget',{
+	    BE.gadget.search('#searchGadget',
 		    searchGadgetSettings
-	    });
+	    );
 		console.log('SEARCH: ' + JSON.stringify(searchGadgetSettings));
 		
 		var regionGadgetSettings = {
@@ -57,9 +57,9 @@
 			showDetailsInline: true,
 			showMap: false,
 		};
-        BE.gadget.region('#regionGadget',{
+        BE.gadget.region('#regionGadget',
             regionGadgetSettings
-        });
+        );
 		console.log('REGION: ' + JSON.stringify(regionGadgetSettings));
     });
 </script>
