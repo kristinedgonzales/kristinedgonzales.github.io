@@ -14,8 +14,8 @@
 <script src="//gadgets.impartmedia.com/gadgets.jsz?key=75c9c8ae84e00a28dd48f117c0ab4c55" type="text/javascript"></script><!-- kristinedgonzales.github.io -->
 <script type="text/javascript">
     $w(function() {
-	    BE.gadget.search('#searchGadget',{
-		    vcID:278,
+	var searchGadgetSettings = {
+		vcID:278,
 		    collapseRefineTools:false,
 		    searchLocation:'index.html',
 		    disabledTypes:['accom','carhire','events','packages'],
@@ -32,9 +32,14 @@
 			showAllTours: true,
 			showMap: false,
 			toursOnlyMode: true,
+		};
+	    BE.gadget.search('#searchGadget',{
+		    searchGadgetSettings
 	    });
-        BE.gadget.region('#regionGadget',{
-            vcID:278,
+		console.log('SEARCH: ' + searchGadgetSettings);
+		
+		var regionGadgetSettings = {
+			vcID:278,
             showAllAccom:false,
             showAllEvents:false,
 			showRefineTools: true,
@@ -51,7 +56,11 @@
 			showAllTours: true,
 			showDetailsInline: true,
 			showMap: false,
+		};
+        BE.gadget.region('#regionGadget',{
+            regionGadgetSettings
         });
+		console.log('REGION: ' + regionGadgetSettings);
     });
 </script>
 </body>
