@@ -22,15 +22,17 @@
 			enableRegionSearch:true,
 			adults: 2,
 			children: 0,
-			defaultRegionRegion: "Blue Mountains",
+			defaultRegionRegion: "Sydney",
 			defaultRegionState: "NSW",
-			defaultSort: "instant",
+			defaultRegionLoc: "Sydney"
+			defaultSort: "price",
 			infants: 0,
 			minDaysFromToday: 2,
 			period: 2,
 			showAllTours: true,
 			showMap: false,
 			toursOnlyMode: true,
+			ignoreSearchCookie:true
 		};
 	    BE.gadget.search('#searchGadget',
 		    searchGadgetSettings
@@ -46,14 +48,16 @@
 	        toursOnlyMode:true,
 			enableRegionSearch:true,
 			collapseRefineTools: false,
-			defaultRegionRegion: "Blue Mountains",
+			defaultRegionRegion: "Sydney",
 			defaultRegionState: "NSW",
-			defaultSort: "instant",
+			defaultRegionLoc: "Sydney",
+			defaultSort: "price",
 			disabledTypes:["accom", "carhire", "events", "packages"],
 			searchLocation: "index.html",
 			showAllTours: true,
 			showDetailsInline: true,
 			showMap: false,
+			ignoreSearchCookie:true
 		};
         BE.gadget.region('#regionGadget',
             regionGadgetSettings
